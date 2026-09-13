@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    container_name: groundwater_app
+    volumes:
+      - .:/app
+    env_file:
+      - .env
